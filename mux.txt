@@ -1,0 +1,17 @@
+module Mul(a0,a1,a2,a3,s0,s1,cout);
+    input s0,s1,a0,a1,a2,a3;
+	 output cout;
+	 wire s0,s1,a0,a1,a2,a3;
+	 reg cout;
+	 initial
+	 begin
+	 if (s0==0 & s1 == 0)
+	  cout = a0;
+	 if (s0==1 & s1 == 0)
+	  cout = a2;
+	 if (s0==0 & s1 == 1)
+	  cout = a1;
+	 if (s0==1 & s1 == 1)
+	  cout = a3;
+	 end
+endmodule

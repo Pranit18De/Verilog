@@ -1,0 +1,16 @@
+module c1(reset,clk,op);
+	 output[3:0] op;
+	 input reset,clk;
+	 wire reset,clk;
+	 reg[3:0] op;
+	 initial 
+	 op <= 0;
+	 
+	 always @(posedge clk or posedge reset)
+	 begin
+	if(reset)
+		op <= 0;
+	else
+		op <= op+1;
+	end
+endmodule
